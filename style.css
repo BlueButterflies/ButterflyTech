@@ -70,7 +70,7 @@ body, html{
 }
 
 .btn {
-  min-width: 200px;
+  min-width: 240px;
   min-height: 60px;
   font-family: 'Caveat', cursive;
   font-size: 2em;
@@ -242,8 +242,8 @@ input, textarea{
 
 .form .submit{
 	color: #17294d;
-	width: 50px;
-	min-width: 100px;
+	width: 100px;
+	min-width: 150px;
  	min-height: 60px;
   	letter-spacing: 1.3px;
   	font-weight: 700;
@@ -267,8 +267,8 @@ input, textarea{
 
 .form .reset{
 	color: #17294d;
-	width: 50px;
-	min-width: 100px;
+	width: 100px;
+	min-width: 150px;
  	min-height: 60px;
   	letter-spacing: 1.3px;
   	font-weight: 700;
