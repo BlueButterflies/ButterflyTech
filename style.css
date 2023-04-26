@@ -163,7 +163,7 @@ hr{
 	margin: 40px;
 }
 .container-img section  i{
-	padding: 0 20px;
+	padding: 20px 20px;
 	font-size: 1.5em;
 	color: #17294d;
 	transform: all 1s;
@@ -187,6 +187,7 @@ hr{
 	margin-top: 10px;
 
 }
+
 /*Footer*/
 /*Contacts section*/
 .contact{
