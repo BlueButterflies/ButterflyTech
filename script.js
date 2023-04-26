@@ -17,5 +17,5 @@ alert("Inserire un messaggio.");
 document.modulo.message.focus();
 }
 else {
-location.href = "mailto:" + email + "?Subject=" + fullName + "&Body=" + message;
+location.href = "mailto:Butterflytech@gmail.com" + email + "?Subject=" + fullName + "&Body=" + message;
 }
