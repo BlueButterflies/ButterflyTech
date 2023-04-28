@@ -213,14 +213,16 @@ hr{
 	padding: 30px 0;
 }
 
-#form select{
+#typeWork{
 	width: 310px;
 	font-size:1.7em;
 	
 }
+
 option{
 	color: rgb(23, 41, 77);
 }
+
 input{
 	width: 310px;
 	color: rgb(23, 41, 77);
