@@ -1,21 +1,25 @@
-function Email() {
-	var email =  document.send.email.value;
-	var fullName =  document.send.fullName.value;
-	var message =  document.send.message.value;
+	var btn = document.getElementById('btn');
 
+	btn.addEventListener('click', function(e) {
+		
+	e.preventDefault()
+    var fullName =  document.getElementById('name');
+	var email =  document.getElementById('email');
+	var message =  document.getElementById('message');
+	var typeWork =  document.getElementById('typeWork');
+	var body =  "Full name: " + fullName.value + "<br> Email: " + email.value + "<br> Type Work: "
+	            + typeWork.value + "<br> Message: " + message.value;
 
-	if ((email.indexOf("@") == (-1)) || (email == "") || (email == "undefined")) {
-alert("Inserire un indirizzo email valido.");
-document.modulo.email.focus();
-}
-else if ((fullName == "") || (fullName == "undefined")) {
-alert("Inserire un oggetto.");
-document.modulo.fullName.focus();
-}
-else if ((message == "") || (message == "undefined")) {
-alert("Inserire un messaggio.");
-document.modulo.message.focus();
-}
-else {
-location.href = "mailto:Butterflytech@gmail.com" + email + "?Subject=" + fullName + "&Body=" + message;
-}
+	var sentMessage = document.getElementById('communication');
+
+    Email.send({
+    SecureToken : "7d3a7a88-2a06-4732-9627-ca6cc311e2da",
+    To : 'sisayasenova@gmail.com',
+    From : 'sisayasenova@gmail.com',
+    Subject : "Contact for work project",
+    Body : body
+	});
+
+	document.getElementById('form').reset();
+
+    })

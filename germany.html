@@ -102,7 +102,7 @@
 		        </h1>
 
 		        <h2>
-		          	Schön dich kennenzulernen, ich bin Siyana. Ich bin Full-Stack-Entwickler.
+		          	Schön dich kennenzulernen, ich bin Siyana. Ich bin Full-Stack-Entwickler und Webdesigner.
 					<br>
 					Mein Hauptziel ist es, Ihnen dabei zu helfen, Ihre Idee mit meinem Wissen und meiner Erfahrung in die Realität umzusetzen.
 					<br>
@@ -245,20 +245,30 @@
 			<h1 class="text-center">Kontakte</h1>
 	    	<div class="row">
 	    		<section class="col text-center form">
-	    			<form action="mailto:butterflytech@gmail.com" method="post" name ="send_request" enctype="multipart/form-data">
+	    			<form method="post"  id="form">
 						<p>
-						<input type="text" name="Name und Nachname" width="400px" placeholder="Name und Nachname"> 
+						<input ttype="text" name="fullName" id="name" width="400px" placeholder="Name und Nachname*" autocomplete="off" required> 
 						</p> 
 						<p> 
-						<input type="text" name="Email" placeholder="Email"> 
+						<input type="email" name="email" id="email" placeholder="Email*" autocomplete="off" required> 
 						</p> 
+						<p>
+							<select id="typeWork">
+								<option>Wählen*</option>
+								<option>Web Entwicklung</option>
+								<option>Web-Design</option>
+								<option>Spielentwicklung</option>
+								<option>Software-Entwicklung</option>
+								<option>Anwendungsentwicklung</option>
+							</select>
+						</p>
 						<p> 
-						<textarea name="Nachricht" rows="5" cols="35" placeholder="Nachricht"></textarea>
+						<textarea name="message" id="message"  rows="5" cols="35" placeholder="Nachricht*" autocomplete="off" required></textarea>
 						  <br>
 						</p> 
 						<p class="wrap"> 
-						<input class="submit" type="submit" value="Schicken"> 
-						<input class="reset" type="reset" value="Zurücksetzen"> 
+						<button class="submit" type="button" id="btn">Schicken</button>
+						<button class="reset" type="reset">Zurücksetzen</button>
 						</p>
 					</form>
 	    		</section>
@@ -305,5 +315,7 @@
 
 	<!--Scripts-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>  
+	<script src="script.js"></script>
 </body>
 </html>
