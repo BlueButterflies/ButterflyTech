@@ -1,3 +1,6 @@
+	
+
+	//Send Email from form contact
 	var btn = document.getElementById('btn');
 
 	btn.addEventListener('click', function(e) {
@@ -9,8 +12,7 @@
 	var typeWork =  document.getElementById('typeWork');
 	var body =  "Full name: " + fullName.value + "<br> Email: " + email.value + "<br> Type Work: "
 	            + typeWork.value + "<br> Message: " + message.value;
-
-	var sentMessage = document.getElementById('communication');
+	            
 
     Email.send({
     SecureToken : "7d3a7a88-2a06-4732-9627-ca6cc311e2da",
@@ -22,4 +24,4 @@
 
 	document.getElementById('form').reset();
 
-    })
+    });

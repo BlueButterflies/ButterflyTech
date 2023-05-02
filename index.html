@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
     <!-- Our style -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body onload="translate('en','lng-tag')">
 	
 	<!--Navbar-->
 	<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
@@ -27,36 +27,41 @@
 	    <div class="collapse navbar-collapse text-white" id="navbarNavDropdown">
 	      <ul class="navbar-nav">
 	        <li class="nav-item">
-	          <a class="nav-link" href="#home">Home</a>
+	          <a class="nav-link home" href="#home" lng-tag="home"></a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#about">About</a>
+	          <a class="nav-link about" href="#about" lng-tag="about"></a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#projects">Projects</a>
+	          <a class="nav-link projects" href="#projects" lng-tag="projects"></a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#contacts">Contacts</a>
+	          <a class="nav-link contacts" href="#contacts" lng-tag="contacts"></a>
 	        </li>
 	        <!-- Languages menu -->
 	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            <img src="https://icons.iconarchive.com/icons/twitter/twemoji-flags/32/United-Kingdom-Flag-icon.png" width="32" height="32">
+	          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" lng-tag="langs">
+	            
 	          </a>
 	          <ul class="dropdown-menu">
+	          	<li>
+	          		<a class="dropdown-item"  id="enTranslator" href="javascript:void(0)">
+	          			<img src="https://icons.iconarchive.com/icons/twitter/twemoji-flags/32/United-Kingdom-Flag-icon.png" width="32" height="32">
+	          		</a>
+	          	</li>
 	            <li>
-	            	<a class="dropdown-item" href="italian.html">
+	            	<a class="dropdown-item" id="itTranslator">
 	            		<img src="https://icons.iconarchive.com/icons/twitter/twemoji-flags/32/Italy-Flag-icon.png" width="32" height="32">
 	            	</a>
 	            </li>
 
 	            <li>
-	            	<a class="dropdown-item" href="bulgarian.html">
+	            	<a class="dropdown-item" id="bgTranslator">
 	            		<img src="https://icons.iconarchive.com/icons/twitter/twemoji-flags/32/Bulgaria-Flag-icon.png" width="32" height="32">
 	            	</a>
 	        	</li>
 	            <li>
-	            	<a class="dropdown-item" href="germany.html">
+	            	<a class="dropdown-item" id="deTranslator">
 		            	<img src="https://icons.iconarchive.com/icons/twitter/twemoji-flags/32/Germany-Flag-icon.png" width="32" height="32">
 		            </a>
 		        </li>
@@ -75,17 +80,17 @@
 			</div>
 
 			<div class="col text-center cover">
-					<h1>You are looking for a professional who can help you realize your ideas?</h1>
-				<br>
-					<h2>Then you are at the right place.</h2>
+					<h1 lng-tag="introTextOne"></h1>
+				    <br>
+					<h2 lng-tag="introTextTwo"></h2>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-12 text-center wrap">
 				<button type="button" class="btn">
-					<a href="#contacts">
-						Contact me
+					<a class="contactme" href="#contacts" lng-tag="btnContactTxt">
+						
 					</a>
 				</button>
 			</div>
@@ -96,20 +101,12 @@
     <div class="container-fluid" id="about">
 	    <div class="row">
 	      <section class="col text-center">
-	        <h1>
-	          About me
+	        <h1 lng-tag="aboutMe">
+	          
 	        </h1>
 
-	        <h2>
-	          Nice to meet you I'm Siyana. I'm Full Stack Developer and Web Designer.
-	          <br>
-	          Helping you turn your idea into reality with my knowledge and expertise is my main goal.
-	          <br>
-	          My top priority is your satisfaction, so I remain in proper communication with you to meet every expectation.
-	          <br>
-	          I am confident that with my skills, experience and dedication to customer satisfaction, 
-	          <br>
-	          I can deliver outstanding results for any web development project.
+	        <h2 lng-tag="aboutDescription">
+	          
 	        </h2>
 	      </section> 
 	    </div>
@@ -117,16 +114,16 @@
 
     <!-- Projects section -->
     <div class="container-fluid" id="projects">
-    	<h1 class="col-12 text-center">Projects</h1>
+    	<h1 class="col-12 text-center" lng-tag="projects"></h1>
 
     	<!-- Games -->
     	<div class="container-img">
-    		<h2 class="col-12 text-center">GAMES</h2>
+    		<h2 class="col-12 text-center" lng-tag="gameText"></h2>
 
     		<section class="text-center">
     			<img src="resource/mathgame.jpg" width="200px" height="200px">
     			<br>
-    			<h3 class="text-center">Mathematic Game</h3>
+    			<h3 class="text-center" lng-tag="mathGame"></h3>
     			<br>
     			<a href="https://github.com/BlueButterflies/MathematicGame/files/11128751/Math.Game.setup.zip">
     				<i class="bi bi-microsoft"></i>
@@ -149,7 +146,7 @@
     		<section class="text-center">
     			<img src="resource/itagame.jpg" width="300px" height="200px">
     			<br>
-    			<h3 class="text-center">Italy Game</h3>
+    			<h3 class="text-center" lng-tag="italyGame"></h3>
     			<br>
     			<a href="https://drive.google.com/file/d/19n8dAEq63yUU3eGjOc7voutgviqcL9C_/view" target="_blank">
     				<i class="bi bi-microsoft"></i>
@@ -165,7 +162,7 @@
 
     	<!-- Website -->
     	<div class="container-img">
-    		<h2 class="col-12 text-center">Website</h2>
+    		<h2 class="col-12 text-center" lng-tag="websitesTxt"></h2>
 
     		<section class="text-center">
     			<img src="resource/nails.png" width="300px" height="200px">
@@ -180,7 +177,7 @@
     		<section class="text-center">
     			<img src="resource/b&b.png" width="300px" height="200px">
     			<br>
-    			<h3 class="text-center">Demo website</h3>
+    			<h3 class="text-center" lng-tag="demo"></h3>
     			<br>
     			<a href="https://bluebutterflies.github.io/Example-simple-page-for-company/index.html" target="_blank">
     				<i class="bi bi-box-arrow-up-right"></i>
@@ -190,7 +187,7 @@
     		<section class="text-center">
     			<img src="resource/photo.png" width="300px" height="200px">
     			<br>
-    			<h3 class="text-center">Demo website</h3>
+    			<h3 class="text-center" lng-tag="demo"></h3>
     			<br>
     			<a href="https://bluebutterflies.github.io/Example-website-for-photograph/" target="_blank">
     				<i class="bi bi-box-arrow-up-right"></i>
@@ -202,12 +199,12 @@
 
     	<!-- Programs -->
     	<div class="container-img">
-    		<h2 class="col-12 text-center">Programs</h2>
+    		<h2 class="col-12 text-center" lng-tag="programs"></h2>
 
     		<section class="text-center">
     			<img src="https://user-images.githubusercontent.com/52591976/79785636-75777800-8344-11ea-87d3-cae470ebba31.png" width="200px" height="200px">
     			<br>
-    			<h3 class="text-center">Phonebook</h3>
+    			<h3 class="text-center" lng-tag="phonebook"></h3>
     			<br>
     			<a href="https://github.com/BlueButterflies/Phonebook/files/8539735/phonebook-setup.zip">
     				<i class="bi bi-download"></i>
@@ -218,7 +215,7 @@
     		<section class="text-center">
     			<img src="https://user-images.githubusercontent.com/52591976/80618940-519eeb00-8a44-11ea-981c-cadf48962da2.png" width="200px" height="200px">
     			<br>
-    			<h3 class="text-center">Calculator</h3>
+    			<h3 class="text-center" lng-tag="calculator"></h3>
     			<br>
     			<a href="https://github.com/BlueButterflies/Calculator/files/8539445/calculator-setup.zip">
     				<i class="bi bi-download"></i>
@@ -228,7 +225,7 @@
     		<section class="text-center">
     			<img src="https://user-images.githubusercontent.com/52591976/79505795-3809a680-8035-11ea-9966-0f9fe8d5afc6.png" width="200px" height="200px">
     			<br>
-    			<h3 class="text-center">Note</h3>
+    			<h3 class="text-center" lng-tag="note"></h3>
     			<br>
     			<a href="https://github.com/BlueButterflies/Note/files/8534087/blocknote-setup.zip">
     				<i class="bi bi-download"></i>
@@ -241,34 +238,29 @@
 	<footer class="container-fluid" >
 		<!-- Contacts section -->
 		<div id="contacts">
-			<h1 class="text-center">Contacts</h1>
+			<h1 class="text-center" lng-tag="contacts"></h1>
 	    	<div class="row">
 	    		<section class="col text-center form">
 	    			<form method="post" id="form">
 						<p>
-						<input type="text" name="fullName" id="name" width="400px" placeholder="Full name*" autocomplete="off" required>
+							<input type="text" name="fullName" id="name" width="400px" placeholder="Full name" autocomplete="off" required>
 						</p> 
 						<p> 
-						<input type="email" name="email" id="email" placeholder="Email*" autocomplete="off" required>
+							<input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required>
 						</p>
 						<p>
-							<select id="typeWork" required>
-								<option>Select*</option>
-								<option>Web development</option>
-								<option>Web Design</option>
-								<option>Game development</option>
-								<option>Software development</option>
-								<option>Application development</option>
+							<select id="typeWork" required lang-tag="options">
+								
 							</select>
 						</p>
 						<p> 
-						<textarea  name="message" id="message" rows="5" cols="35" placeholder="Message*" autocomplete="off" required></textarea>
+						    <textarea  name="message" id="message" rows="5" cols="40" placeholder="Write your request" autocomplete="off" required></textarea>
 						<br>
 						</p> 
 
 						<p class="wrap"> 
-						<button class="submit" type="submit" id="btn">Send</button>
-						<button class="reset" type="reset"> Reset</button>
+							<button class="submit" type="submit" id="btn" lng-tag="send"></button>
+							<button class="reset" type="reset" lang-tag="reset"> </button>
 						</p>
 					</form>
 	    		</section>
@@ -298,16 +290,8 @@
     	</div>
 		<div class="container-fluid footer-end">
 			<div class="row">
-				<h4 class="col text-center">
-					&#169;2023 All rights reserved
-				</h4>
-				<h4 class="col text-center">
-					Build with &hearts; from Butterfly Tech Creative Solution
-				</h4>
-				<h4 class="col text-center">
-					<a href="cookies.html">
-						Cookies
-					</a>
+				<h4 class="col text-center" lng-tag="biuldTxt">
+					
 				</h4>
 			</div>
 		</div>
@@ -321,5 +305,7 @@
 
 	<!-- Our Script-->
 	<script src="script.js"></script>
+	<script src="lng/translate.js"></script>
+	<script src="lng/index.js"></script>
 </body>
 </html>
