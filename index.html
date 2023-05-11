@@ -10,12 +10,12 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
 	<!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
 
     <!-- Our style -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body onload="translate('en','lng-tag')">
+<body>
 	
 	<!--Navbar-->
 	<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
@@ -25,49 +25,37 @@
 	      <span class="navbar-toggler-icon text-white"></span>
 	    </button>
 	    <div class="collapse navbar-collapse text-white" id="navbarNavDropdown">
-	      <ul class="navbar-nav">
-	        <li class="nav-item">
-	          <a class="nav-link home" href="#home" lng-tag="home"></a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link about" href="#about" lng-tag="about"></a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link projects" href="#projects" lng-tag="projects"></a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link contacts" href="#contacts" lng-tag="contacts"></a>
-	        </li>
-	        <!-- Languages menu -->
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" lng-tag="langs">
-	            
-	          </a>
-	          <ul class="dropdown-menu">
-	          	<li>
-	          		<a class="dropdown-item"  id="enTranslator" href="javascript:void(0)">
-	          			<img src="https://icons.iconarchive.com/icons/twitter/twemoji-flags/32/United-Kingdom-Flag-icon.png" width="32" height="32">
-	          		</a>
-	          	</li>
-	            <li>
-	            	<a class="dropdown-item" id="itTranslator">
-	            		<img src="https://icons.iconarchive.com/icons/twitter/twemoji-flags/32/Italy-Flag-icon.png" width="32" height="32">
-	            	</a>
-	            </li>
-
-	            <li>
-	            	<a class="dropdown-item" id="bgTranslator">
-	            		<img src="https://icons.iconarchive.com/icons/twitter/twemoji-flags/32/Bulgaria-Flag-icon.png" width="32" height="32">
-	            	</a>
+	      	<ul class="navbar-nav">
+	      		<li class="nav-item">
+	        	  <a class="nav-link home" href="#home">
+	        	  	Home
+	        	  </a>
 	        	</li>
-	            <li>
-	            	<a class="dropdown-item" id="deTranslator">
-		            	<img src="https://icons.iconarchive.com/icons/twitter/twemoji-flags/32/Germany-Flag-icon.png" width="32" height="32">
-		            </a>
-		        </li>
-	          </ul>
-	        </li>
-	      </ul>
+
+	        	<li class="nav-item">
+	        	  <a class="nav-link about" href="#about">
+	        	  	About
+	        	  </a>
+	        	</li>
+
+	        	<li class="nav-item">
+	        	  <a class="nav-link skills" href="#skills">
+	        	  	Skills
+	        	  </a>
+	        	</li>
+
+	        	<li class="nav-item">
+	        	  <a class="nav-link projects" href="#projects">
+	        	  	Projects
+	        	  </a>
+	        	</li>
+
+	        	<li class="nav-item">
+	        	  <a class="nav-link contacts" href="#contacts">
+	        	  	Contacts
+	        	  </a>
+	        	</li>
+	      	</ul>
 	    </div>
 	  </div>
 	</nav>
@@ -78,19 +66,21 @@
 			<div class="col text-center logo-img">
 				<img src="resource/logo.png">
 			</div>
+		</div>
 
+		<div class="row">
 			<div class="col text-center cover">
-					<h1 lng-tag="introTextOne"></h1>
-				    <br>
-					<h2 lng-tag="introTextTwo"></h2>
+					<h1 class="introTextOne">You are looking for a professional who can help you realize your ideas?</h1>
+				<br>
+					<h2 class="introTextTwo">Then you are at the right place.</h2>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col-12 text-center wrap">
+			<div class="col text-center wrap">
 				<button type="button" class="btn">
-					<a class="contactme" href="#contacts" lng-tag="btnContactTxt">
-						
+					<a class="contactMe" href="#contacts">
+						Contact me
 					</a>
 				</button>
 			</div>
@@ -101,201 +91,392 @@
     <div class="container-fluid" id="about">
 	    <div class="row">
 	      <section class="col text-center">
-	        <h1 lng-tag="aboutMe">
-	          
+	        <h1 class="aboutMe">
+	          <strong>About me</strong>
 	        </h1>
 
-	        <h2 lng-tag="aboutDescription">
-	          
+	        <h2 class="aboutDescription text-center">
+	          Nice to meet you I'm Siyana. I'm Full Stack Developer and Web Designer.
+	          Helping you turn your idea into reality with my knowledge and expertise is my main goal.
+	          My top priority is your satisfaction, so I remain in proper communication with you to meet every expectation.
+	          I am confident that with my skills, experience and dedication to customer satisfaction, 
+	          I can deliver outstanding results for any web development project.
 	        </h2>
 	      </section> 
 	    </div>
     </div>
 
-    <!-- Projects section -->
-    <div class="container-fluid" id="projects">
-    	<h1 class="col-12 text-center" lng-tag="projects"></h1>
+    <!--Skills section-->
+    <div class="container-fluid" id="skills">
+    	<div class="row">
+    		<h1 class="col-12 skill text-center">
+	          <strong>Skills</strong>
+	        </h1>
 
-    	<!-- Games -->
-    	<div class="container-img">
-    		<h2 class="col-12 text-center" lng-tag="gameText"></h2>
+	        <!--Back end-->
+	        <div class="container col-12">
+	        	<h2 class=" text-center">
+	        		Back End
+	            </h2>
 
-    		<section class="text-center">
-    			<img src="resource/mathgame.jpg" width="200px" height="200px">
-    			<br>
-    			<h3 class="text-center" lng-tag="mathGame"></h3>
-    			<br>
-    			<a href="https://github.com/BlueButterflies/MathematicGame/files/11128751/Math.Game.setup.zip">
-    				<i class="bi bi-microsoft"></i>
-    			</a>
-    			<a href="https://github.com/BlueButterflies/MathematicGame/files/11128752/MathGame.zip">
-    				<i class="bi bi-android"></i>
-    			</a>
-    		</section>
+	            <section class="text-center">
+	            	<div class="grid-container">
+	            		<div class="grid-item">
+	            			<img width="100" height="100" src="https://img.icons8.com/ios/100/17294d/c-sharp-logo.png" alt="c-sharp-logo"/>
+	            			<h2><strong>C#</strong></h2>
+	            		</div>
+	            		<div class="grid-item">
+	            			<img width="100" height="100" src="https://img.icons8.com/ios/100/17294d/javascript-logo.png" alt="javascript-logo"/>
+	            			<h2><strong>Javascript</strong></h2>
+	            		</div>
 
-    		<section class=" text-center">
-    			<img src="https://user-images.githubusercontent.com/52591976/197787658-18f253f7-8ea0-4c17-b825-b6e1d17f5bc8.png" width="150px" height="200px">
-    			<br>
-    			<h3 class="text-center">The Flying Bird Game</h3>
-    			<br>
-    			<a href="https://github.com/BlueButterflies/TheFlyingBirdGame/files/11128765/TheFlyingBirdGame.zip">
-    				<i class="bi bi-android"></i>
-    			</a>
-    		</section>
-    		
-    		<section class="text-center">
-    			<img src="resource/itagame.jpg" width="300px" height="200px">
-    			<br>
-    			<h3 class="text-center" lng-tag="italyGame"></h3>
-    			<br>
-    			<a href="https://drive.google.com/file/d/19n8dAEq63yUU3eGjOc7voutgviqcL9C_/view" target="_blank">
-    				<i class="bi bi-microsoft"></i>
-    			</a>
-    			
-    			<a href="https://drive.google.com/file/d/19n8dAEq63yUU3eGjOc7voutgviqcL9C_/view" target="_blank">
-    				<i class="bi bi-android"></i>
-    			</a>
-    		</section>
-    	</div>
+	            	    <div class="grid-item">
+  					        <img width="100" height="100" src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/100/17294d/external-json-javascript-object-notation-is-a-lightweight-data-interchange-format-logo-regular-tal-revivo.png" alt="external-json-javascript-object-notation-is-a-lightweight-data-interchange-format-logo-regular-tal-revivo"/>
+  					        <h2><strong>Json</strong></h2>
+  				        </div>
 
-		<hr>
+  					    <div class="grid-item">
+  						    <img width="100" height="100" src="https://img.icons8.com/windows/100/17294d/node-js.png" alt="node-js"/>
+  						    <h2><strong>Node.js</strong></h2>
+  					    </div>
 
-    	<!-- Website -->
-    	<div class="container-img">
-    		<h2 class="col-12 text-center" lng-tag="websitesTxt"></h2>
+  					    <div class="grid-item">
+  					        <img width="100" height="100" src="https://img.icons8.com/ios/100/17294d/sql.png" alt="sql"/>
+  					        <h2><strong>SQL</strong></h2>
+  				        </div>
+  						<div class="grid-item">
+  							<img width="100" height="100" src="https://img.icons8.com/ios/100/17294d/postgreesql.png" alt="postgreesql"/>
+  							<h2><strong>PostgreSql</strong></h2>
+  						</div>
+  					</div>   
+	            </section>
+	        </div>
 
-    		<section class="text-center">
-    			<img src="resource/nails.png" width="300px" height="200px">
-    			<br>
-    			<h3 class="text-center">Nails by Lidi Nikolova</h3>
-    			<br>
-    			<a href="https://bluebutterflies.github.io/DreamNailsByLidinikolova/Eng/index.html#" target="_blank">
-    				<i class="bi bi-box-arrow-up-right"></i>
-    			</a>
-    		</section>
-    		
-    		<section class="text-center">
-    			<img src="resource/b&b.png" width="300px" height="200px">
-    			<br>
-    			<h3 class="text-center" lng-tag="demo"></h3>
-    			<br>
-    			<a href="https://bluebutterflies.github.io/Example-simple-page-for-company/index.html" target="_blank">
-    				<i class="bi bi-box-arrow-up-right"></i>
-    			</a>
-    		</section>
-    		
-    		<section class="text-center">
-    			<img src="resource/photo.png" width="300px" height="200px">
-    			<br>
-    			<h3 class="text-center" lng-tag="demo"></h3>
-    			<br>
-    			<a href="https://bluebutterflies.github.io/Example-website-for-photograph/" target="_blank">
-    				<i class="bi bi-box-arrow-up-right"></i>
-    			</a>
-    		</section>
-    	</div>
+	        <!--Front end-->
+	        <div class="container col-12">
+	        	<h2 class="text-center">Front End</h2>
 
-    	<hr>
+	        	<section class="text-center">
+	        		<div class="grid-container text-center">	
+  						<div class="grid-item">
+  							<img width="100" height="100" src="https://img.icons8.com/ios/100/17294d/react-native--v1.png" alt="react-native--v1"/>
+  							<h2><strong>React</strong></h2>
+  						</div>
 
-    	<!-- Programs -->
-    	<div class="container-img">
-    		<h2 class="col-12 text-center" lng-tag="programs"></h2>
+  						<div class="grid-item">
+  							<img width="100" height="100" src="https://img.icons8.com/ios/100/17294d/html-5--v1.png" alt="html-5--v1"/>
+  							<h2><strong>HTML5</strong></h2>
+  						</div>
 
-    		<section class="text-center">
-    			<img src="https://user-images.githubusercontent.com/52591976/79785636-75777800-8344-11ea-87d3-cae470ebba31.png" width="200px" height="200px">
-    			<br>
-    			<h3 class="text-center" lng-tag="phonebook"></h3>
-    			<br>
-    			<a href="https://github.com/BlueButterflies/Phonebook/files/8539735/phonebook-setup.zip">
-    				<i class="bi bi-download"></i>
-    			</a>
-    		</section>
-    		
+  						<div class="grid-item">
+  							<img width="100" height="100" src="https://img.icons8.com/ios/100/17294d/css3.png" alt="css3"/>
+  							<h2><strong>CSS3</strong></h2>
+  						</div>
 
-    		<section class="text-center">
-    			<img src="https://user-images.githubusercontent.com/52591976/80618940-519eeb00-8a44-11ea-981c-cadf48962da2.png" width="200px" height="200px">
-    			<br>
-    			<h3 class="text-center" lng-tag="calculator"></h3>
-    			<br>
-    			<a href="https://github.com/BlueButterflies/Calculator/files/8539445/calculator-setup.zip">
-    				<i class="bi bi-download"></i>
-    			</a>
-    		</section>
+  						<div class="grid-item">
+  							<img width="100" height="100" src="https://img.icons8.com/ios/100/17294d/redux.png" alt="redux"/>
+  							<h2><strong>Redux</strong></h2>
+  						</div>
 
-    		<section class="text-center">
-    			<img src="https://user-images.githubusercontent.com/52591976/79505795-3809a680-8035-11ea-9966-0f9fe8d5afc6.png" width="200px" height="200px">
-    			<br>
-    			<h3 class="text-center" lng-tag="note"></h3>
-    			<br>
-    			<a href="https://github.com/BlueButterflies/Note/files/8534087/blocknote-setup.zip">
-    				<i class="bi bi-download"></i>
-    			</a>
-    		</section>
+  						<div class="grid-item">
+  							<img width="100" height="100" src="https://img.icons8.com/windows/100/17294d/bootstrap.png" alt="bootstrap"/>
+  							<h2><strong>Bootstrap</strong></h2>
+  						</div>
+  					</div>
+	        	</section>
+	        </div>
+
+	        <!--ID-->
+	        <div class="container col-12">
+	        	<h2 class="text-center">ID</h2>
+
+	        	<section class="text-center">
+	        		<div class="grid-container text-center">	
+  						<div class="grid-item">
+  							<img width="100" height="100" src="https://img.icons8.com/ios/100/17294d/visual-studio.png" alt="visual-studio"/>
+  							<h2><strong>Visual Studio</strong></h2>
+  						</div>
+  						<div class="grid-item">
+  							<img width="100" height="100" src="https://img.icons8.com/wired/100/17294d/sublime-text-new-logo.png" alt="sublime-text-new-logo"/>
+  							<h2><strong>Sublime Text</strong></h2>
+  						</div>
+  				
+  						<div class="grid-item">
+  							<img width="100" height="100" src="https://img.icons8.com/dotty/100/17294d/visual-studio-code-2019.png" alt="visual-studio-code-2019"/>
+  							<h2><strong>Visual Studio Code</strong></h2>
+  						</div>
+  						<div class="grid-item">
+  							<img width="100" height="100" src="https://img.icons8.com/ios/100/17294d/unity.png" alt="unity"/>
+  							<h2><strong>Unity</strong></h2>
+  						</div>
+  					</div>
+	        	</section>
+	        </div>
+
+	        <!--General-->
+	        <div class="container col-12">
+	        	<h2 class="text-center">General</h2>
+
+	        	<section class="text-center">
+	        		<div class="grid-container text-center">
+	        			<div></div>
+  						<div class="grid-item">
+  							<img width="100" height="100" src="https://img.icons8.com/ios/100/17294d/github--v1.png" alt="github--v1"/>
+  							<h2><strong>GitHub</strong></h2>
+  						</div>
+  						<div class="grid-item">
+  							<img width="100" height="100" src="https://img.icons8.com/ios/100/17294d/git.png" alt="git"/>
+  							<h2><strong>Git</strong></h2>
+  						</div>
+  						<div></div>
+  					</div>
+	        	</section>
+	        </div>
+
+	        <!--UI/UX-->
+	        <div class="container col-12">
+	        	<h2 class="text-center">UI/UX</h2>
+
+	        	<section class="text-center">
+	        		<div class="grid-container text-center">
+	        			<div></div>
+  						<div class="grid-item">
+  							<img width="100" height="100" src="https://img.icons8.com/ios/100/17294d/figma--v1.png" alt="figma--v1"/>
+  					        <h2><strong>Figma</strong></h2>
+  						</div>
+  						<div></div>
+  					</div>
+	        	</section>
+	        </div>
     	</div>
     </div>
 
-    <!--Footer section-->
-	<footer class="container-fluid" >
-		<!-- Contacts section -->
-		<div id="contacts">
-			<h1 class="text-center" lng-tag="contacts"></h1>
-	    	<div class="row">
-	    		<section class="col text-center form">
-	    			<form method="post" id="form">
-						<p>
-							<input type="text" name="fullName" id="name" width="400px" placeholder="Full name" autocomplete="off" required>
-						</p> 
-						<p> 
-							<input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required>
-						</p>
-						<p>
-							<select id="typeWork" required lang-tag="options">
-								
-							</select>
-						</p>
-						<p> 
-						    <textarea  name="message" id="message" rows="5" cols="40" placeholder="Write your request" autocomplete="off" required></textarea>
-						<br>
-						</p> 
+    <!-- Projects section -->
+    <div class="container-fluid" id="projects">
+    	
+    	<h1 class="text-center projectTxt"><strong>Projects</strong></h1>
 
-						<p class="wrap"> 
-							<button class="submit" type="submit" id="btn" lng-tag="send"></button>
-							<button class="reset" type="reset" lang-tag="reset"> </button>
-						</p>
-					</form>
+		<div class="row">
+    		<!-- Games -->
+	    	<div class="container col-12">
+	    		<h2 class=" text-center gameTxt">GAMES</h2>
+
+	    		<section class="text-center">
+	    			<div class="grid-container">
+	    				<div class="grid-item">
+	    					<img src="resource/mathgame.jpg" width="200px">
+	    					<h3 class="text-center mathGame">Mathematic Game</h3>
+	    					<a href="https://github.com/BlueButterflies/MathematicGame/files/11128751/Math.Game.setup.zip">
+	    						<i class="bi bi-microsoft"></i>
+	    					</a>
+	    					<a href="https://github.com/BlueButterflies/MathematicGame/files/11128752/MathGame.zip">
+	    						<i class="bi bi-android"></i>
+	    					</a>
+	    				</div>
+
+    					<div class="grid-item">
+    						<img src="https://user-images.githubusercontent.com/52591976/197787658-18f253f7-8ea0-4c17-b825-b6e1d17f5bc8.png" width="100px" >
+    						<h3 class="text-center">The Flying Bird Game</h3>
+    						<a href="https://github.com/BlueButterflies/TheFlyingBirdGame/files/11128765/TheFlyingBirdGame.zip">
+    							<i class="bi bi-android"></i>
+    						</a>
+    					</div>
+
+	    				<div class="grid-item">
+	    					<img src="resource/itagame.jpg" width="300px">
+	    					<h3 class="text-center italyGame">Italy Game</h3>
+	    					<a href="https://drive.google.com/file/d/19n8dAEq63yUU3eGjOc7voutgviqcL9C_/view" target="_blank">
+	    						<i class="bi bi-microsoft"></i>
+	    					</a>
+	    					<a href="https://drive.google.com/file/d/19n8dAEq63yUU3eGjOc7voutgviqcL9C_/view" target="_blank">
+	    						<i class="bi bi-android"></i>
+    						</a>
+    					</div>
+    				</div>
+    			</section>		
+    		</div>
+
+    		<!-- Website -->
+    		<div class="container col-12">
+    			<h2 class="text-center website">Website</h2>
+
+    			<section class="text-center">
+    				<div class="grid-container">
+    					<div class="grid-item">
+    						<img src="resource/nails.png" width="200px">
+    						<h3 class="text-center">Nails by Lidi Nikolova</h3>
+    						<a href="https://bluebutterflies.github.io/DreamNailsByLidinikolova/Eng/index.html#" target="_blank">
+    							<i class="bi bi-box-arrow-up-right"></i>
+    						</a>
+    					</div>
+
+    					<div class="grid-item">
+    						<img src="resource/b&b.png" width="200px">
+    						<h3 class="text-center demo">Demo website</h3>
+			    			<a href="https://bluebutterflies.github.io/Example-simple-page-for-company/index.html" target="_blank">
+			    				<i class="bi bi-box-arrow-up-right"></i>
+			    			</a>
+    					</div>
+    					<div class="grid-item">
+    						<img src="resource/photo.png" width="200px">
+    						<h3 class="text-center demoTwo">Demo website</h3>
+    						<a href="https://bluebutterflies.github.io/Example-website-for-photograph/" target="_blank">
+    							<i class="bi bi-box-arrow-up-right"></i>
+    						</a>
+    					</div>
+    				</div>
+    			</section>
+    		</div>
+
+			<!-- Programs -->
+    		<div class="container col-12">
+    			<h2 class="text-center programs">Programs</h2>
+
+    			<section class="text-center"> 
+    				<div class="grid-container">
+    					<div class="grid-item">
+    						<img src="https://user-images.githubusercontent.com/52591976/79785636-75777800-8344-11ea-87d3-cae470ebba31.png" width="200px" >
+    						<h3 class="text-center phonebook">Phonebook</h3>
+    						<a href="https://github.com/BlueButterflies/Phonebook/files/8539735/phonebook-setup.zip">
+    							<i class="bi bi-download"></i>
+    						</a>
+    					</div>
+
+    					<div class="grid-item">
+    						<img src="https://user-images.githubusercontent.com/52591976/80618940-519eeb00-8a44-11ea-981c-cadf48962da2.png" width="200px">
+    						<h3 class="text-center calculator">Calculator</h3>
+    						<a href="https://github.com/BlueButterflies/Calculator/files/8539445/calculator-setup.zip">
+    							<i class="bi bi-download"></i>
+    						</a>
+    					</div>
+
+    					<div class="grid-item">
+    						<img src="https://user-images.githubusercontent.com/52591976/79505795-3809a680-8035-11ea-9966-0f9fe8d5afc6.png" width="200px">
+    						<h3 class="text-center note">Note</h3>
+    						<a href="https://github.com/BlueButterflies/Note/files/8534087/blocknote-setup.zip">
+    							<i class="bi bi-download"></i>
+    						</a>
+    					</div>
+    				</div>
+    			</section>
+    		</div>
+    	</div>
+    
+    <!-- Contacts section -->
+	<div class="container-fluid" id="contacts">
+	    	<div class="row">
+	    		<h1 class="col-12 text-center contactTxt"><strong>Contacts</strong></h1>
+
+	    		<section class="col form">
+	    			<form method="post" id="form"> 
+	    				<div class="row">
+	    					<div class="form-group col">
+	    						<label class="nameTxt" for="name">Full name</label>
+						    	<input class="form-control" type="text" name="fullName" id="name" width="400px" autocomplete="off" required>
+	    				    </div>
+
+	    				    <div class="form-group col">
+	    						<label class="emailTxt" for="email">Email</label>
+						    	<input class="form-control" type="email" name="email" id="email" autocomplete="off" required>
+	    				    </div>
+	    				</div>
+	    				
+	    				<div class="row">
+	    					<div class="form-group col">
+	    						<label class="chooceTxt" for="typeWork">Chooce type of work</label>
+								<select class="form-control" id="typeWork" required>
+									<option class="optionOne">Web development</option>
+									<option class="optionTwo">Web Design</option>
+									<option class="optionTree">Software development</option>
+								 </select>
+							</div>
+
+	    					<div class="form-group col">
+	    						<label class="continentTxt" for="continent">Continent</label>
+								<select class="form-control" id="continent" required>
+									<option class="continentOne">Asia</option>
+									<option class="continentTwo">Africa</option>
+									<option class="continentTree">Europe</option>
+									<option class="continentFour">North America</option>
+									<option class="continentFive">South America</option>
+									<option class="continentSix">Australia/Oceania</option>
+									<option class="continentSeven">Antarctica</option>
+								 </select>
+							</div>
+	    				</div>
+
+						<div  class="form-group"> 
+							<label class="messageTxt" for="message">Write your request</label>
+						    <textarea  class="form-control" name="message" id="message" rows="5" cols="15" autocomplete="off" required></textarea>
+						   <br>
+	    				</div>
+
+	    				<div class="wrap form-group" onclick="ResetForm()">	
+	    					<button class="submit" type="submit" id="btn">Send</button>
+						    <button class="reset" type="reset" id="reset">Reset</button>
+	    				</div>
+	    			</form>
 	    		</section>
+	    			
 	    		<section class="col contact text-center">
 	    			<p>
 	    				<a href="tel:00393891524443">
 	    				<i class="bi bi-telephone-fill"></i>
-	    				<!-- +393891524443 -->
+	    				<span class="callTxt">Call me</span>
 	    			</a>
 	    			</p>
 	    			<br>
 	    			<p>
 	    				<a href="mailto:Butterflytech@gmail.com">
 	    					<i class="bi bi-envelope-fill"></i>
-	    					<!-- butterflytech@gmail.com -->
+	    					<span class="writeTxt">Write me</span>
 		    			</a>
 		    		</p>
 		    			<br>
 	    			<p>
 	    				<a href="https://github.com/BlueButterflies" target="_blank">
 							<i class="bi bi-github"></i>
-							<!-- BlueButterflies -->
+							<span class="visitTxt">Visit me</span> 
 					    </a>
 					</p>
 	    		</section>
     		</div>
+    </div>
+
+    <!--Footer section-->
+    <footer class="container-fluid" id="footer">
+    	<div class="d-lg-flex justify-content-between">
+
+    		<div class="copyright">
+    			<h4 class="biuldTxt">
+					&#169;2023  Build with &hearts; from Butterfly Tech Creative Solution
+			    </h4>
+    		</div>
+    		
+
+			<!-- Languages-->
+
+				<div class="langs">
+					<ul class="d-flex gap-3 list-unstyled">
+						<li>
+							<a class="langChooce" lang="EN">
+	                   			EN
+	          		        </a>
+						</li>
+						<li>
+							<a class="langChooce" lang="IT">
+	        					IT
+	        				</a>
+						</li>
+						<li>
+							<a class="langChooce" lang="DE">
+	        					DE		
+		    	    		</a>
+						</li>
+					</ul>
+				</div>
     	</div>
-		<div class="container-fluid footer-end">
-			<div class="row">
-				<h4 class="col text-center" lng-tag="biuldTxt">
-					
-				</h4>
-			</div>
-		</div>
-	</footer>
+    </footer>
 
 	<!--Scripts-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
@@ -305,7 +486,5 @@
 
 	<!-- Our Script-->
 	<script src="script.js"></script>
-	<script src="lng/translate.js"></script>
-	<script src="lng/index.js"></script>
 </body>
 </html>
