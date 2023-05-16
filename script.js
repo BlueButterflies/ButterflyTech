@@ -16,7 +16,11 @@
 
 	//About section
 	let aboutMe = document.querySelector(".aboutMe");
-	let aboutDescription =  document.querySelector(".aboutDescription");
+	let lineOne =  document.querySelector(".lineOne");
+	let lineTwo =  document.querySelector(".lineTwo");
+	let lineThree =  document.querySelector(".lineThree");
+	let lineFour =  document.querySelector(".lineFour");
+	let lineFive =  document.querySelector(".lineFive");
 
 	//Skills section
 	let skill = document.querySelector(".skill");
@@ -86,7 +90,11 @@
 
           //About me section
           aboutMe.textContent = data[attr].aboutMe
-          aboutDescription.textContent =  data[attr].aboutDescription
+          lineOne.textContent =  data[attr].lineOne
+          lineTwo.textContent =  data[attr].lineTwo
+          lineThree.textContent =  data[attr].lineThree
+          lineFour.textContent =  data[attr].lineFour
+          lineFive.textContent =  data[attr].lineFive
 
           //Skills section
           skill.textContent =  data[attr].skill
@@ -154,7 +162,11 @@
 
 				//About tags section
 				"aboutMe": "About me",
-				"aboutDescription": "Nice to meet you I'm Siyana. I'm Full Stack Developer and Web Designer.Helping you turn your idea into reality with my knowledge and expertise is my main goal. My top priority is your satisfaction, so I remain in proper communication with you to meet every expectation. I am confident that with my skills, experience and dedication to customer satisfaction, I can deliver outstanding results for any web development project.", 
+				"lineOne": "Nice to meet you I'm Siyana. I'm Full Stack Developer and Web Designer.", 
+				"lineTwo": "Helping you turn your idea into reality with my knowledge and expertise is my main goal.",
+				"lineThree": "My top priority is your satisfaction, so I remain in proper communication with you to meet every expectation.",
+				"lineFour": "I am confident that with my skills, experience and dedication to customer satisfaction, ",
+				"lineFive": "I can deliver outstanding results for any web development project.",
 
                 //Skills tags section
                 "skill": "Skills",
@@ -216,7 +228,11 @@
 
 				//About tags section
 				"aboutMe": "Su di me",
-				"aboutDescription": "Piacere di conoscerti, sono Siyana. Sono una sviluppatrice Full Stack Developer e Web Designer. Aiutarti a trasformare la tua idea in realtà con la mia conoscenza e competenza è il mio obiettivo principale. La mia massima priorità è la tua soddisfazione, quindi rimango in corretta comunicazione con te per soddisfare ogni aspettativa. Sono fiduciosa che con le mie capacità, esperienza e dedizione alla soddisfazione del cliente, posso fornire risultati eccezionali per qualsiasi progetto di sviluppo web.",
+				"lineOne": "Piacere di conoscerti, sono Siyana. Sono una sviluppatrice Full Stack Developer e Web Designer.",
+				"lineTwo": "Aiutarti a trasformare la tua idea in realtà con la mia conoscenza e competenza è il mio obiettivo principale.",
+				"lineThree": "La mia massima priorità è la tua soddisfazione, quindi rimango in corretta comunicazione con te per soddisfare ogni aspettativa.",
+				"lineFour": "Sono fiduciosa che con le mie capacità, esperienza e dedizione alla soddisfazione del cliente, ",
+				"lineFive": "posso fornire risultati eccezionali per qualsiasi progetto di sviluppo web.",
 
                 //Skills tags section
                 "skill": "Skills",
@@ -277,7 +293,11 @@
 
 				//About tags section
 				"aboutMe": "Wer bin Ich",
-				"aboutDescription": "Schön dich kennenzulernen, ich bin Siyana. Ich bin Full-Stack-Entwickler und Webdesigner.Mein Hauptziel ist es, Ihnen dabei zu helfen, Ihre Idee mit meinem Wissen und meiner Erfahrung in die Realität umzusetzen.Meine oberste Priorität ist Ihre Zufriedenheit, daher bleibe ich in angemessener Kommunikation mit Ihnen, um alle Erwartungen zu erfüllen.Ich bin zuversichtlich, dass ich mit meinen Fähigkeiten, meiner Erfahrung und meinem Engagement für die Kundenzufriedenheit Ich kann hervorragende Ergebnisse für jedes Webentwicklungsprojekt liefern.",
+				"lineOne": "Schön dich kennenzulernen, ich bin Siyana. Ich bin Full-Stack-Entwickler und Webdesigner.",
+				"lineTwo":"Mein Hauptziel ist es, Ihnen dabei zu helfen, Ihre Idee mit meinem Wissen und meiner Erfahrung in die Realität umzusetzen.",
+				"lineThree":"Meine oberste Priorität ist Ihre Zufriedenheit, daher bleibe ich in angemessener Kommunikation mit Ihnen, um alle Erwartungen zu erfüllen.",
+				"lineFour":"Ich bin zuversichtlich, dass ich mit meinen Fähigkeiten, meiner Erfahrung und meinem Engagement für die Kundenzufriedenheit ",
+				"lineFive":"Ich kann hervorragende Ergebnisse für jedes Webentwicklungsprojekt liefern.",
 
                 //Skills tags section
                 "skill": "Tech-Stack",
