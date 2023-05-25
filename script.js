@@ -30,6 +30,7 @@
 	let website =  document.querySelector(".website");
 	let demo =  document.querySelector(".demo");
 	let demoTwo =  document.querySelector(".demoTwo");
+	let demoThree =  document.querySelector(".demoThree");
 	//Programs
 	let projectTxt= document.querySelector(".projectTxt");
 	let programs = document.querySelector(".programs");
@@ -99,6 +100,7 @@
           website.textContent = data[attr].website
           demo.textContent = data[attr].demo
           demoTwo.textContent = data[attr].demoTwo
+          demoThree.textContent = data[attr].demoThree
           programs.textContent = data[attr].programs
           phonebook.textContent = data[attr].phonebook
           calculator.textContent = data[attr].calculator
@@ -171,6 +173,7 @@
 				"website": "Website",
 				"demo": "Demo website",
 				"demoTwo": "Demo website",
+				"demoThree": "Demo website",
 				"programs": "Programs",
 				"phonebook": "Phonebook",
 				"calculator": "Calculator",
@@ -237,6 +240,7 @@
 				"website": "Siti web",
 				"demo": "Sito dimostrativo",
 				"demoTwo": "Sito dimostrativo",
+				"demoThree": "Sito dimostrativo",
 				"programs": "Programmi",
 				"phonebook": "Rubrica telefonica",
 				"calculator": "Calculatrice",
@@ -302,6 +306,7 @@
 				"website": "Webseite",
 				"demo": "Demo-Website",
 				"demoTwo": "Demo-Website",
+				"demoThree": "Demo-Website",
 				"programs": "Programme",
 				"phonebook": "Telefonbuch",
 				"calculator": "Taschenrechner",
