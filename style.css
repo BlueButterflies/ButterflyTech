@@ -116,18 +116,16 @@ a{
 
 /*About section*/
 #about{
-  padding: 50px;
+  padding: 10% 0;
 }
-
 .aboutDescription{
-	margin: 50px;
-	padding: 30px;
-	white-space: wrap;
+	margin:0 20%;
+  padding: 10px 0;
 }
 
 #about h1{
 	font-size: 2.8em;
-	padding: 30px;
+  padding-bottom: 10%;
 }
 
 /*Skills section */
