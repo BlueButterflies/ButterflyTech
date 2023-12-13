@@ -360,8 +360,8 @@
 
     Email.send({
     SecureToken : "7d3a7a88-2a06-4732-9627-ca6cc311e2da",
-    To : 'sisayasenova@gmail.com',
-    From : 'sisayasenova@gmail.com',
+    To : 'my email',
+    From : 'email.value',
     Subject : "Contact for work project",
     Body : body
 	});
